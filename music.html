@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+            audio
+        </title>
+        <style>
+            body
+            {
+                background-image:url('muscic1.webp');
+                background-position:center ;
+                background-size: cover;
+                position: absolute;
+                overflow: hidden;
+                
+            }
+            h1
+            {   position: relative;
+                text-align:right;
+                font-size: 100px;
+                font-family:cursive;
+                color:lavender;
+                padding-right: 100px;
+                padding-top: 300px;
+
+            }
+            .nav{
+                padding-top: 10px;
+            }
+            .nav a
+        {
+            float:left;
+            display: flex;
+            color:rgb(28, 16, 3)
+;
+            text-align:right;
+       
+            text-decoration: double;
+        }
+        .nav a:hover
+        {
+        
+            color: rgb(239, 26, 26);
+
+        }
+        .nav a
+        {   padding-left: 35px;
+            font-size: 25px;
+            color: rgb(5, 19, 19);
+            font-family: serif;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+        img{
+            align-items: center;
+            position: relative;
+            align-items: center;
+            padding-left: 150px;
+            padding-bottom: 500px;
+        }
+        
+        </style>
+         <script>
+            function cimage()
+            {
+                var a=document.getElementById('ad');
+                 let displayImage =document.getElementById('img1')
+                 if(displayImage.src.match('play.png'))
+                 {
+                    displayImage.src='pause1.png'
+                    ad.play();
+                    
+                 }
+                 else
+                 {
+                    displayImage.src='play.png'
+                    ad.pause();
+                    
+
+                 }
+                }
+            
+           
+            
+        </script>
+    </head>
+
+    <body>
+        <div class="nav">
+            <a class="ac" href="#home">Home</a>
+            <a href="#menu">menu</a>
+            <a href="#contact">Contact Us</a> 
+            <a href="#about">About</a></div>
+        <h1>
+            music
+        </h1>
+      <div>  <img src="play.png" height="100px" width="100px" id="img1" onclick="cimage()"></div><br>
+
+        <div>
+        <audio id="ad" >
+            <source src="[MP3JUICE.ME] Agar Tum Saath Ho FULL AUDIO Song _ Tamasha _ Ranbir Kapoor, Deepika Padukone _ T-Series-192k.mp3" type="audio/mp3">
+        </audio>
+       
+      
+        </div>
+
+    </body>
+</html>    
